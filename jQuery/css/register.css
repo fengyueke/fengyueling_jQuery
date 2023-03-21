@@ -1,0 +1,89 @@
+body {
+  margin: 10px 20% 0 20%;
+}
+.banner {
+  margin-top: 100px;
+  text-align: center;
+}
+.banner .top span {
+  font-size: 20px;
+  font-weight: 500;
+}
+.banner .info {
+  margin-top: 10px;
+}
+.banner .info span {
+  font-size: 12px;
+  color: #95989C;
+}
+#form1 {
+  margin-top: 40px;
+}
+#form1 .sub {
+  width: 200px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.modal {
+  display: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: rgba(175, 176, 177, 0.5);
+}
+.modal i {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.modal aside {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 14px;
+  padding: 25px;
+}
+.modal aside .title {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.modal aside .title span {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+.modal aside .content {
+  font-size: 14px;
+  color: #95989C;
+}
+.modal aside .content .c_1 {
+  margin-bottom: 20px;
+}
+.modal aside .content .c_2 {
+  margin-bottom: 20px;
+}
+.modal aside .agree a {
+  color: #e30077;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.modal aside button {
+  margin-top: 10px;
+  background: 0;
+  border: 1px solid #e30077;
+  width: 200px;
+  height: 40px;
+  border-radius: 7px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

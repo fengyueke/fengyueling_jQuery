@@ -1,0 +1,306 @@
+body {
+  background: #C0C0C0;
+  font-size: 75px;
+}
+html {
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+header .searcher {
+  width: 50%;
+  border-radius: 17px;
+}
+header i {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background: url('../img/search.png');
+  background-size: contain;
+  margin-left: 5px;
+}
+.banenr {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  height: 500px;
+}
+.banenr .left {
+  width: 22%;
+  overflow: hidden;
+}
+.banenr .left ul {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  overflow: auto;
+}
+.banenr .left ul li {
+  width: 90%;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  margin-left: 10%;
+}
+.banenr .left ul li .icon {
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../img/like.png');
+  background-size: contain;
+  margin-left: 10%;
+  transform: translate(0, 4px);
+}
+.banenr .left ul li .song {
+  cursor: pointer;
+}
+.banenr .left ul li .liked {
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../img/liked.png');
+  background-size: contain;
+  margin-left: 10%;
+  transform: translate(0, 4px);
+}
+.banenr .left ul li .name {
+  position: absolute;
+  left: 60%;
+}
+.banenr .left ul li .mv {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../img/mv.png');
+  background-size: contain;
+  position: absolute;
+  right: 10%;
+  top: 5px;
+  cursor: pointer;
+}
+.banenr .left ul :nth-child(even) {
+  background: #CDCDCD;
+}
+@keyframes dres {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.banenr .main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  overflow: hidden;
+}
+.banenr .main img {
+  margin-top: 10px;
+  border-radius: 50%;
+  animation: dres 10s infinite linear forwards ;
+}
+.banenr .main img:hover {
+  animation-play-state: paused;
+}
+.banenr .right {
+  width: 22%;
+  position: relative;
+  overflow: auto;
+}
+.banenr .right .list .clear {
+  position: absolute;
+  right: 10%;
+  top: 0%;
+  cursor: pointer;
+}
+.banenr .right .list ul {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  overflow: auto;
+}
+.banenr .right .list ul li {
+  cursor: pointer;
+  width: 90%;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  margin-right: 10%;
+}
+.banenr .right .list ul li .icon {
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../img/liked.png');
+  background-size: contain;
+  margin-left: 10%;
+  transform: translate(0, 4px);
+}
+.banenr .right .list ul li .liked {
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../img/liked.png');
+  background-size: contain;
+  margin-left: 10%;
+  transform: translate(0, 4px);
+}
+.banenr .right .list ul li .name {
+  position: absolute;
+  left: 60%;
+}
+.banenr .right .list ul li .mv {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../img/mv.png');
+  background-size: contain;
+  position: absolute;
+  right: 10%;
+  top: 5px;
+  cursor: pointer;
+}
+.banenr .right .list ul :nth-child(even) {
+  background: #CDCDCD;
+}
+.banenr .right .comment ul {
+  width: 100%;
+  list-style-type: none;
+  height: 100%;
+}
+.banenr .right .comment li {
+  width: 100%;
+  height: 235px;
+  position: relative;
+}
+.banenr .right .comment li .headPhoto {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.banenr .right .comment li .headPhoto img {
+  width: 100%;
+  border-radius: 50%;
+}
+.banenr .right .comment li .nickname {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  transform: translate(0, 14px);
+}
+.banenr .right .comment li .content {
+  padding-top: 20px;
+  display: inline-block;
+  height: 200px;
+  text-indent: 1rem;
+}
+.ardio {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.ardio .circulate {
+  cursor: pointer;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  transform: translate(-2px, -7px);
+}
+.ardio .zero {
+  background: url('../img/0.png');
+  background-size: contain;
+}
+.ardio .one {
+  background: url('../img/1.png');
+  background-size: contain;
+}
+.ardio .two {
+  background: url('../img/2.png');
+  background-size: contain;
+}
+.ardio .tabList {
+  cursor: pointer;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: url('../img/list.png');
+  background-size: contain;
+  transform: translate(-2px, -7px);
+}
+.ardio audio {
+  display: inline-block;
+  width: 75%;
+  height: 20px;
+}
+footer {
+  font-size: 12px;
+  height: 48px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 10px);
+  bottom: 0;
+}
+footer .insert .icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url('../img/gongan.png');
+  background-size: contain;
+}
+#modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(127, 127, 127, 0.5);
+}
+#modal i {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#modal video {
+  width: 75%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.hrefLogin {
+  font-size: 12px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+.hrefLogin a {
+  color: red;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.hrefLogin .red {
+  color: red;
+}
+.exit {
+  display: none;
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute;
+  right: 1%;
+  top: 5%;
+}
