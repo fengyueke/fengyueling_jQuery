@@ -29,7 +29,7 @@ $(function () {
               document.write('注册成功'+count+'秒后自动跳转')
               count--
             }else{
-              location.href='../login.html'
+              location.href='./login.html'
             }
           }, 1000);
         }else{
