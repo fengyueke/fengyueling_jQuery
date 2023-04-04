@@ -9,7 +9,7 @@ $(function () {
     }
     $.post(
       "http://127.0.0.1/api/login",
-      { username: $(".ipt").val(), pwd: $(".pwd").val() },
+      { name: $(".ipt").val(), password: $(".pwd").val() },
       function (res) {
         console.log(res);
         if(res.status===200){
@@ -30,6 +30,6 @@ $(function () {
     );
   });
   $(".register").on("click", function () {
-    console.log("register");
+    location.href='./register.html'
   });
 });

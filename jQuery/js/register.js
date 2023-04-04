@@ -3,11 +3,11 @@ $(function () {
   $('.modal').fadeIn();
    // 点击空白 返回登录页
    $('.zhe').on('click',function(){
-    location.href='../login.html'
+    location.href='./login.html'
    })
   //  点击 X 返回登录页
    $('.modal .title span').on('click',function(){
-    location.href='../login.html'
+    location.href='./login.html'
   })
   $('.acces').on('click',function(){
     $('.modal').fadeOut();
@@ -19,7 +19,7 @@ $(function () {
     }
     $.post(
       "http://127.0.0.1/api/register",
-      { username: $(".ipt").val(), pwd: $(".pwd").val() },
+      { name: $(".ipt").val(), password: $(".pwd").val() },
       function (res) {
         if(res.status===200){
           $('body').html('')

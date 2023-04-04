@@ -17,15 +17,17 @@ $(function(){
   // 在播放但不在播放列表的id
   let nullListId=-1
   $('[data-toggle="tooltip"]').tooltip()
-  $.get('http://127.0.0.1/api/username',function(res){
-  if(res.status===200){
-    $('.hrefLogin').html(`<span><i>欢迎</i><i class="red">&nbsp;&nbsp;${res.username}</i></span>`)
+  $.get('http://127.0.0.1/api/userInfo',function(res){
+    console.log(res);
+    if(res.status===200){
+    $('.hrefLogin').html(`<span><i>欢迎</i><i class="red">&nbsp;&nbsp;${res.data}</i></span>`)
     $('.exit').fadeIn()
   }
 })
  
   $('.exit').on('click',function(){
-    $.post('http://127.0.0.1/api/logout',function(res){
+    $.post('http://127.0.0.1/api/exitLogin',function(res){
+      console.log(res);
       if(res.status===200){
         alert('退出成功')
         $('.exit').fadeOut()
